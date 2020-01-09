@@ -4,6 +4,9 @@
 ** and share it to your clients.
 */
 
+// work only if called from withing wordpress universe
+defined( 'ABSPATH' ) or die( 'error!' );
+
 /*
 ** add wordpress administration bootstrap
 */
