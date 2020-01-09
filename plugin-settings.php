@@ -4,11 +4,8 @@
 ** and share it to your clients.
 */
 
-/*
-** add wordpress administration bootstrap
-*/
-require_once( ABSPATH . 'wp-load.php' );
-require_once( ABSPATH . 'wp-admin/admin.php' );
+// work only if called from withing wordpress universe
+defined( 'ABSPATH' ) or die( 'error!' );
 
 /*
 ** add a global plugin settings variable
