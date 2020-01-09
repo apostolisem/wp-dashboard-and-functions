@@ -11,6 +11,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wpcare-dashboard-and-functions
 */
 
+// work only if called from withing wordpress universe
+defined( 'ABSPATH' ) or die( 'error!' );
+
 // plugin folder url
 if(!defined('WPCDF_PLUGIN_URL')) {
 	define('WPCDF_PLUGIN_URL', plugin_dir_url( __FILE__ ));
