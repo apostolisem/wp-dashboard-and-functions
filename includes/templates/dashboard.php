@@ -3,8 +3,10 @@
  * Custom Dashboard Template
  */
 
- // work only if called from withing wordpress universe
- defined( 'ABSPATH' ) or die( 'error!' );
+// add wordpress administration bootstrap
+require_once( ABSPATH . 'wp-load.php' );
+require_once( ABSPATH . 'wp-admin/admin.php' );
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 // load current user variable
 $current_user = wp_get_current_user();
