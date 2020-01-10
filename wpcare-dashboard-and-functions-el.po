@@ -1,0 +1,225 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCARE: Dashboard & Functions\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-09 23:50+0000\n"
+"PO-Revision-Date: 2020-01-09 23:56+0000\n"
+"Last-Translator: admin <apostolismk@gmail.com>\n"
+"Language-Team: Ελληνικά\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3.2"
+
+#: includes/templates/dashboard.php:29
+msgid "The email address you entered is not correct, please try again!"
+msgstr ""
+"Η διεύθυνση ηλεκτρονικού ταχυδρομείου που καταχωρίσατε δεν είναι σωστή, "
+"δοκιμάστε ξανά!"
+
+#: includes/templates/dashboard.php:123
+msgid "Dashboard"
+msgstr "Πίνακας Ελέγχου"
+
+#: includes/templates/dashboard.php:135
+msgid "Success! Support Request Sent, we'll contact you soon!"
+msgstr ""
+"Επιτυχία! Το αίτημα σας έχει σταλεί, θα επικοινωνήσουμε μαζί σας σύντομα!"
+
+#: includes/templates/dashboard.php:140
+msgid "Unknown Error!"
+msgstr "Αγνωστο σφάλμα!"
+
+#: includes/templates/dashboard.php:145
+msgid "Error!"
+msgstr "Σφάλμα!"
+
+#: includes/templates/dashboard.php:151
+#, php-format
+msgid ""
+"Welcome %s! We've added a few links on this page to help you manage your "
+"website. For further assistance, please use the embedded form below to "
+"request support."
+msgstr ""
+"Καλώς ήλθατε %s! Έχουμε προσθέσει μερικούς συνδέσμους σε αυτή τη σελίδα για "
+"να σας βοηθήσουμε να διαχειριστείτε τον ιστότοπό σας. Για περαιτέρω βοήθεια, "
+"χρησιμοποιήστε την παρακάτω ενσωματωμένη φόρμα για να ζητήσετε υποστήριξη."
+
+#: includes/templates/dashboard.php:160
+msgid "Pages & Posts"
+msgstr "Δημοσιεύσεις"
+
+#: includes/templates/dashboard.php:163
+msgid "Add New Page"
+msgstr "Νέα Σελίδα"
+
+#: includes/templates/dashboard.php:164
+msgid "Edit Existing Page"
+msgstr "Επεξεργασία Σελίδας"
+
+#: includes/templates/dashboard.php:165
+msgid "Add New Blog Post"
+msgstr "Νέο Άρθρο"
+
+#: includes/templates/dashboard.php:166
+msgid "Edit Existing Post"
+msgstr "Επεξεργασία Άρθρου"
+
+#: includes/templates/dashboard.php:167
+msgid "Blog Categories"
+msgstr "Κατηγορίες Άρθρων"
+
+#: includes/templates/dashboard.php:176
+msgid "Ecommerce"
+msgstr "Κατάστημα"
+
+#: includes/templates/dashboard.php:179
+msgid "Recent Orders"
+msgstr "Πρόσφατες Παραγγελίες"
+
+#: includes/templates/dashboard.php:180
+msgid "Coupon Codes"
+msgstr "Κουπόνια Έκπτωσης"
+
+#: includes/templates/dashboard.php:181
+msgid "Reports & Analytics"
+msgstr "Αναφορές & Analytics"
+
+#: includes/templates/dashboard.php:182
+msgid "Add New Products"
+msgstr "Εισαγωγή Προϊόντος"
+
+#: includes/templates/dashboard.php:183
+msgid "Edit Products"
+msgstr "Επεξεργασία Προϊόντος"
+
+#: includes/templates/dashboard.php:192
+msgid "Site Options"
+msgstr "Επιλογές"
+
+#: includes/templates/dashboard.php:195
+msgid "Edit My Profile"
+msgstr "Το Προφίλ μου"
+
+#: includes/templates/dashboard.php:196
+msgid "View Media Library"
+msgstr "Βιβλιοθήκη Αρχείων"
+
+#: includes/templates/dashboard.php:197
+msgid "Add Media"
+msgstr "Προσθήκη Αρχείων"
+
+#: includes/templates/dashboard.php:198
+msgid "View Users"
+msgstr "Προβολή χρηστών"
+
+#: includes/templates/dashboard.php:199
+msgid "Navigation Menus"
+msgstr "Μενού πλοήγησης"
+
+#: includes/templates/dashboard.php:208
+msgid "Useful Links"
+msgstr "Χρήσιμα"
+
+#: includes/templates/dashboard.php:211
+msgid "My Account"
+msgstr "Ο λογαριασμός μου"
+
+#: includes/templates/dashboard.php:212
+msgid "Owners Manual"
+msgstr "Εγχειρίδιο ιδιοκτήτη"
+
+#: includes/templates/dashboard.php:213
+msgid "Help & Tutorials"
+msgstr "Βίντεο & Tutorials"
+
+#: includes/templates/dashboard.php:214
+msgid "WPCARE blog"
+msgstr ""
+
+#: includes/templates/dashboard.php:215
+msgid "Maintenance Plans"
+msgstr ""
+
+#: includes/templates/dashboard.php:225
+msgid "Request Support"
+msgstr "Ζητήστε υποστήριξη"
+
+#: includes/templates/dashboard.php:226
+#, php-format
+msgid ""
+"Fill the form below and \"Send a Request\" to our Support team. Wee'll "
+"inform you in advance if any charges apply. Alternatively, you can drop us "
+"an <a href=\"mailto:%s\">e-mail</a>."
+msgstr ""
+"Συμπληρώστε την παρακάτω φόρμα και επικοινωνήστε με την ομάδα υποστήριξής "
+"μας. Θα σας ενημερώσουμε εκ των προτέρων για τυχόν χρεώσεις. Εναλλακτικά, "
+"μπορείτε να μας στείλετε ένα <a href=\"mailto:%s\"> ηλεκτρονικό μήνυμα </a>."
+
+#: includes/templates/dashboard.php:229
+msgid "Name"
+msgstr "Όνομα"
+
+#: includes/templates/dashboard.php:231
+msgid "E-mail"
+msgstr ""
+
+#: includes/templates/dashboard.php:233
+msgid "Your message"
+msgstr "Το μήνυμά σου"
+
+#: includes/templates/dashboard.php:248
+msgid "Messages from"
+msgstr "Μηνύματα από"
+
+#: includes/templates/dashboard.php:267
+msgid "Website Information"
+msgstr "Πληροφορίες ιστοτόπου"
+
+#: includes/templates/dashboard.php:268
+msgid "Domain:"
+msgstr ""
+
+#: includes/templates/dashboard.php:269
+msgid "Domain Expiration:"
+msgstr ""
+
+#: includes/templates/dashboard.php:270
+msgid "Plan:"
+msgstr ""
+
+#: includes/templates/dashboard.php:271
+msgid "Plan Expiration:"
+msgstr ""
+
+#: includes/templates/dashboard.php:272
+msgid ""
+"<strong>Tip:</strong> To ensure the smooth running of your website, please "
+"renew the above services before they expire."
+msgstr ""
+"<strong>Συμβουλή:</strong> Για να εξασφαλιστεί η ομαλή λειτουργία του "
+"ιστότοπού σας, ανανεώστε τις παραπάνω υπηρεσίες πριν λήξουν."
+
+#. Name of the plugin
+msgid "WPCARE: Dashboard & Functions"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Replace the Dashboard with a custom one and add useful functions for the "
+"clients of WordPress Care (wpcare.gr)."
+msgstr ""
+"Αντικαταστήστε τον Πίνακα ελέγχου με έναν προσαρμοσμένο και προσθέστε "
+"χρήσιμες λειτουργίες για τους πελάτες του WordPress Care (wpcare.gr)."
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://wpcare.gr"
+msgstr ""
+
+#. Author of the plugin
+msgid "WordPress Care"
+msgstr ""

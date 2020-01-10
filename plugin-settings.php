@@ -7,37 +7,25 @@
 // work only if called from withing wordpress universe
 defined( 'ABSPATH' ) or die( 'error!' );
 
-/*
-** add a global plugin settings variable
-*/
+// add a global plugin settings variable
 global $wpc;
 
-/*
-** edit your company info
-*/
+// edit your company info
 $wpc['company_name'] = "WordPress Care";
 $wpc['company_website'] = "https://wpcare.gr";
 $wpc['company_email'] = "info@wpcare.gr";
 
-/*
-** login alerts to "company_email" of users
-** with "edit_pages" capability
-*/
+// api url to get the website information
+$wpc['api_url'] = "https://wpcare.gr/tools/domains/json.php";
+
+// login alerts to "company_email" of users with "edit_pages" capability
 $wpc['enable_login_alerts'] = 1; // default 1 = yes
 
-/*
-** disable the mail alerts of automatic core updates
-** (updates are not affected)
-*/
+// disable the mail alerts of automatic core updates (updates are not affected)
 $wpc['disable_auto_update_core_alerts'] = 1; // default 1 = yes
 
-/*
-** add a custom "Thank you for trusting
-** Company Name for your WordPress needs" text on footer
-*/
+// add a custom "Thank you for trusting Company Name for your WordPress needs" text on footer
 $wpc['add_custom_footer_text'] = 1; // default 1 = yes
 
-/*
-** limit the wp heartbeat to minimum
-*/
+// limit the wp heartbeat to the minimum
 $wpc['limit_heartbeat_interval'] = 1; // default 1 = yes

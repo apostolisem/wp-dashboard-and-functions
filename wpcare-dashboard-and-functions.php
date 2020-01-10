@@ -3,7 +3,7 @@
 Plugin Name: WPCARE: Dashboard & Functions
 Plugin URI: https://wpcare.gr
 Description: Replace the Dashboard with a custom one and add useful functions for the clients of WordPress Care (wpcare.gr).
-Version: 1.0.0
+Version: 2.0.0
 Author: WordPress Care
 Author URI: https://wpcare.gr
 License: GPL2
@@ -20,15 +20,15 @@ if(!defined('WPCDF_PLUGIN_URL')) {
 }
 
 // main class
-class wpcdf_custom_dashboard {
+class wpcdf_custom_constructor {
 
 	/*--------------------------------------------*
-	 * Constructor
-	 *--------------------------------------------*/
+	* Constructor
+	*--------------------------------------------*/
 
 	/**
-	 * Initializes the plugin by setting localization, filters, and administration functions.
-	 */
+	* Initializes the plugin by setting localization, filters, and administration functions.
+	*/
 	function __construct() {
 
 		add_action('admin_menu', array( &$this,'wpcdf_register_menu') );
@@ -51,10 +51,8 @@ class wpcdf_custom_dashboard {
 
 	}
 
-
-
 	function wpcdf_register_menu() {
-		add_dashboard_page( 'Dashboard', 'Dashboard', 'read', 'wpcare-dashboard', array( &$this,'wpcdf_create_dashboard') );
+		add_dashboard_page( __( 'Dashboard', 'wpcare-dashboard-and-functions' ), __( 'Dashboard', 'wpcare-dashboard-and-functions' ), 'read', 'wpcare-dashboard', array( &$this,'wpcdf_create_dashboard') );
 	}
 
 	function wpcdf_create_dashboard() {
@@ -66,11 +64,11 @@ class wpcdf_custom_dashboard {
 	}
 
 	function wpcdf_hide_original_link_to_dashboard() {
-	  echo '<style>.menu-icon-dashboard .wp-first-item {	display:none; }</style>';
+		echo '<style>.menu-icon-dashboard .wp-first-item {	display:none; }</style>';
 	}
 
 
 }
 
 // instantiate plugin's class
-$GLOBALS['wpcare_custom_dashboard'] = new wpcdf_custom_dashboard();
+$GLOBALS['wpcare_custom_dashboard'] = new wpcdf_custom_constructor();
