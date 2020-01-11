@@ -1,6 +1,7 @@
 # WPCARE: Dashboard & Functions
+![Plugin Preview](https://wpcare.gr/tools/domains/plugin-preview3.jpg)
 
-A Wordpress Plugin to Replace the Default Admin Dashboard with a Custom One and add Useful Functions for Wpcare.gr Clients.
+A Wordpress Plugin to Replace the Default Admin Dashboard with a custom one and add Useful Functions for Wpcare.gr Clients.
 
 ## Installation
 
@@ -47,7 +48,7 @@ The plugin will recognize the following JSON output and will show the domain's d
 ```html
 https://server-domain.com/api.php?domain=client-domain.com&ver=1&action=messages
 ```
-#### JSON Output with domain messages:
+#### The JSON output:
 The plugin will recognize the following JSON output and will show the messages on client's dashboard.
 ```json
 ["10-01-2020:::The Message for our client.","11-01-2020:::Another Message for our client."]
