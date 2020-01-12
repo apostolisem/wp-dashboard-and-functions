@@ -6,8 +6,8 @@ Description: Replace the Dashboard with a custom one and add useful functions fo
 Version: 2.0.0
 Author: WordPress Care
 Author URI: https://wpcare.gr
-License: GPL2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: MIT
+License URI: https://choosealicense.com/licenses/mit/
 Text Domain: wpcare-dashboard-and-functions
 */
 

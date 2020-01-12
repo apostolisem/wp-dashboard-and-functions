@@ -11,28 +11,28 @@ $current_user = wp_get_current_user();
 
 // get domain
 function wpc_get_domain() {
-  return $_SERVER['HTTP_X_FORWARDED_HOST'];
+  return str_replace("www.", "", $_SERVER['HTTP_HOST']);
 }
 
 // load global settings from plugin-settings.php
 global $wpc;
 
 // gather the post data if form is submitted
-if (isset($_POST['wpc_name'])) {
-  $wpc_name = $_POST['wpc_name'];
-}
+$wpc_name = (isset($_POST['wpc_name'])) ? $_POST['wpc_name'] : '';
 
 // gather the email address of the user
-if (isset($_POST['wpc_email']) && is_email($_POST['wpc_email'])) {
+
+$wpc_email = (isset( $_POST['wpc_email'])) ?  $_POST['wpc_email'] : '';
+$wpc_error = '';
+
+if (strlen($wpc_email) > 0 && is_email($wpc_email)) {
   $wpc_email = $_POST['wpc_email'];
-} elseif (isset($_POST['wpc_email']) && !is_email($_POST['wpc_email'])) {
+} elseif (strlen($wpc_email) > 0 && !is_email($wpc_email)) {
   $wpc_error = __("The email address you entered is not correct, please try again!",'wpcare-dashboard-and-functions');
 }
 
 // gather the message of support request
-if (isset($_POST['wpc_message'])) {
-  $wpc_message = $_POST['wpc_message'];
-}
+$wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
 ?>
 
 <style>
@@ -144,7 +144,7 @@ if (isset($_POST['wpc_message'])) {
       $to = $wpc['company_email'];
       $subject =  "Support Request from " . wpc_get_domain();
       $headers =  'From: no-reply@' . wpc_get_domain() . "\r\n" .
-                  'Reply-To: ' . $email . "\r\n";
+                  'Reply-To: ' . $wpc_email . "\r\n";
 
       if(wp_mail($to, $subject, strip_tags($wpc_message), $headers)) { // message sent
         $success_msg = __('Success! Support Request Sent, we\'ll contact you soon!','wpcare-dashboard-and-functions');
@@ -156,7 +156,7 @@ if (isset($_POST['wpc_message'])) {
         echo '<div class="notice notice-error inline"><p>'.$uknown_error.'</p></div>';
       }
 
-  } elseif (isset($wpc_error)) {
+  } elseif (strlen($wpc_error) > 0) {
     $error_ = __("Error!",'wpcare-dashboard-and-functions');
     echo '<div class="notice notice-error inline"><p>'.$error_.' '.$wpc_error.'</p></div>';
   }
@@ -278,7 +278,7 @@ if (isset($_POST['wpc_message'])) {
               echo "</ul>";
             }
           } else {
-            echo "<ul><li>-</li></ul>";
+            echo "<ul><li>no messages</li></ul>";
           }
           ?>
 
