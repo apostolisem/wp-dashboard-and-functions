@@ -29,3 +29,16 @@ $wpc['add_custom_footer_text'] = 1; // default 1 = yes
 
 // limit the wp heartbeat to the minimum
 $wpc['limit_heartbeat_interval'] = 1; // default 1 = yes
+
+// enable woocommerce functions
+$wpc['enable_woo_functions'] = 1; // default 1 = yes
+
+
+################################################################################
+### WARNING! DO NOT EDIT BELOW THIS LINE
+################################################################################
+
+// if woo is not active then deactivate the woo functions by default
+if (!class_exists( 'woocommerce' )) {
+  $wpc['enable_woo_functions'] = 0; //
+}

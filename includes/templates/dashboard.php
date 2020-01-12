@@ -80,7 +80,7 @@ if (isset($_POST['wpc_message'])) {
 
 	.col-1-4 {
 		width: 20%;
-    min-width: 164px;
+    min-width: 155px;
 		float:left;
     padding: 0 2%;
     margin: 2% 0;
@@ -115,6 +115,21 @@ if (isset($_POST['wpc_message'])) {
   input {
     padding: 3px 8px!important;
     margin-bottom:6px!important;
+  }
+
+  .website-info li {
+    margin-bottom: 6px;
+    padding:10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#0099FE;
+    color:#fff;
+  }
+
+  .website-info li a,
+  .website-info li a:hover {
+    color:#fff;
   }
 </style>
 
@@ -160,14 +175,16 @@ if (isset($_POST['wpc_message'])) {
 								<?php _e('Pages & Posts','wpcare-dashboard-and-functions'); ?>
 							</h2>
 							<ul>
-								<li><a href="<?php echo get_admin_url(null, '/post-new.php?post_type=page'); ?>"><?php _e('Add New Page','wpcare-dashboard-and-functions'); ?></a></li>
-								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=page'); ?>"><?php _e('Edit Existing Page','wpcare-dashboard-and-functions'); ?></a></li>
 								<li><a href="<?php echo get_admin_url(null, '/post-new.php'); ?>"><?php _e('Add New Blog Post','wpcare-dashboard-and-functions'); ?></a></li>
 								<li><a href="<?php echo get_admin_url(null, '/edit.php'); ?>"><?php _e('Edit Existing Post','wpcare-dashboard-and-functions'); ?></a></li>
+                <li><a href="<?php echo get_admin_url(null, '/post-new.php?post_type=page'); ?>"><?php _e('Add New Page','wpcare-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=page'); ?>"><?php _e('Edit Existing Page','wpcare-dashboard-and-functions'); ?></a></li>
 								<li><a href="<?php echo get_admin_url(null, '/edit-tags.php?taxonomy=category'); ?>"><?php _e('Blog Categories','wpcare-dashboard-and-functions'); ?></a></li>
 							</ul>
 					</div><!-- .inside -->
 				</div><!-- .col-4 -->
+
+        <?php if ($wpc['enable_woo_functions']) { /* show woo menu only if woo is active */ ?>
 
 				<div class="col-1-4">
 						<div class="inside">
@@ -185,6 +202,8 @@ if (isset($_POST['wpc_message'])) {
 					</div><!-- .inside -->
 				</div><!-- .col-4 -->
 
+      <?php } /* end of woo check */ ?>
+
         <div class="col-1-4">
             <div class="inside">
               <h2>
@@ -193,8 +212,8 @@ if (isset($_POST['wpc_message'])) {
               </h2>
               <ul>
                 <li><a href="<?php echo get_admin_url(null, '/profile.php'); ?>"><?php _e('Edit My Profile','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="<?php echo get_admin_url(null, '/upload.php'); ?>"><?php _e('View Media Library','wpcare-dashboard-and-functions'); ?></a></li>
                 <li><a href="<?php echo get_admin_url(null, '/media-new.php'); ?>"><?php _e('Add Media','wpcare-dashboard-and-functions'); ?></a></li>
+                <li><a href="<?php echo get_admin_url(null, '/upload.php'); ?>"><?php _e('View Media Library','wpcare-dashboard-and-functions'); ?></a></li>
                 <li><a href="<?php echo get_admin_url(null, '/users.php'); ?>"><?php _e('View Users','wpcare-dashboard-and-functions'); ?></a></li>
                 <li><a href="<?php echo get_admin_url(null, '/nav-menus.php'); ?>"><?php _e('Navigation Menus','wpcare-dashboard-and-functions'); ?></a></li>
               </ul>
