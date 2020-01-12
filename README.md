@@ -3,6 +3,14 @@
 
 A Wordpress Plugin to Replace the Default Admin Dashboard with a custom one and add Useful Functions for Wpcare.gr Clients.
 
+- Replace the original WordPress Dashboard with a Custom one
+- Easy way to customize the plugin for your clients
+- Send login alerts every time an Administrator logins
+- Limit WordPress heartbeat to the minimum for server resources saving
+- Disable WordPress Automatic Core Updates alerts
+
+\* Please consider that some features may not have been implemented yet.
+
 ## Installation
 
 1. Download the plugin from Github to your computer.
