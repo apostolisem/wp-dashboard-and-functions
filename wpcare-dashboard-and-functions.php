@@ -3,7 +3,7 @@
 Plugin Name: WPCARE: Dashboard & Functions
 Plugin URI: https://wpcare.gr
 Description: Replace the Dashboard with a custom one and add useful functions for the clients of WordPress Care (wpcare.gr).
-Version: 2.0.0
+Version: 2.0.3
 Author: WordPress Care
 Author URI: https://wpcare.gr
 License: MIT
@@ -35,6 +35,7 @@ class wpcdf_custom_constructor {
 		add_action('admin_menu', array( &$this,'wpcdf_load_plugin_settings') );
 		add_action('load-index.php', array( &$this,'wpcdf_redirect_dashboard') );
 		add_action('admin_head', array( &$this,'wpcdf_hide_original_link_to_dashboard') );
+		add_filter('plugins_loaded', array( &$this,'load_custom_plugin_translation_file'), 10, 2 );
 
 	} // end constructor
 
@@ -65,6 +66,11 @@ class wpcdf_custom_constructor {
 
 	function wpcdf_hide_original_link_to_dashboard() {
 		echo '<style>.menu-icon-dashboard .wp-first-item {	display:none; }</style>';
+	}
+
+	function load_custom_plugin_translation_file() {
+		$mofile = plugin_dir_path( __FILE__ ) . 'wpcare-dashboard-and-functions-' . get_locale() . '.mo';
+		return load_textdomain('wpcare-dashboard-and-functions', $mofile);
 	}
 
 

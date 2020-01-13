@@ -117,7 +117,7 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
     margin-bottom:6px!important;
   }
 
-  .website-info li {
+  .website-info li.li-bubble {
     margin-bottom: 6px;
     padding:10px;
     -webkit-border-radius: 10px;
@@ -228,8 +228,8 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
               </h2>
               <ul>
                 <li><a href="https://wpcare.gr/my-account/" target="_blank"><?php _e('My Account','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/tools/crm/knowledge-base" target="_blank"><?php _e('Owners Manual','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/tools/crm/knowledge-base" target="_blank"><?php _e('Help & Tutorials','wpcare-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://wpcare.gr/my-account/subscriptions/" target="_blank"><?php _e('My Subscriptions','wpcare-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://wpcare.gr/tools/crm/knowledge-base" target="_blank"><?php _e('Knowledge Base','wpcare-dashboard-and-functions'); ?></a></li>
                 <li><a href="https://wpcare.gr/blog/" target="_blank"><?php _e('WPCARE blog','wpcare-dashboard-and-functions'); ?></a></li>
                 <li><a href="https://wpcare.gr/pricing/" target="_blank"><?php _e('Maintenance Plans','wpcare-dashboard-and-functions'); ?></a></li>
               </ul>
@@ -274,7 +274,7 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
               $message = explode(":::", $message);
 
               echo "<ul>";
-              echo "<li>[".$message[0]."]<br />".$message[1]."</li>";
+              echo "<li class='li-bubble'>[".$message[0]."]<br />".$message[1]."</li>";
               echo "</ul>";
             }
           } else {

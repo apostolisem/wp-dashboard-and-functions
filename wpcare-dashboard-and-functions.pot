@@ -159,6 +159,14 @@ msgstr ""
 msgid "E-mail"
 msgstr ""
 
+#: includes/templates/dashboard.php:231
+msgid "My Subscriptions"
+msgstr ""
+
+#: includes/templates/dashboard.php:232
+msgid "Knowledge Base"
+msgstr ""
+
 #: includes/templates/dashboard.php:233
 msgid "Your message"
 msgstr ""

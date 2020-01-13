@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: WPCARE: Dashboard & Functions\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 23:50+0000\n"
-"PO-Revision-Date: 2020-01-09 23:56+0000\n"
+"PO-Revision-Date: 2020-01-13 16:29+0200\n"
 "Last-Translator: admin <apostolismk@gmail.com>\n"
 "Language-Team: Ελληνικά\n"
 "Language: el\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.3.1; wp-5.3.2"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Loco-Version: 2.3.1; wp-5.3.2\n"
 
 #: includes/templates/dashboard.php:29
 msgid "The email address you entered is not correct, please try again!"
@@ -166,6 +166,14 @@ msgstr "Όνομα"
 #: includes/templates/dashboard.php:231
 msgid "E-mail"
 msgstr ""
+
+#: includes/templates/dashboard.php:231
+msgid "My Subscriptions"
+msgstr "Οι συνδρομές μου"
+
+#: includes/templates/dashboard.php:232
+msgid "Knowledge Base"
+msgstr "Βάση Γνώσεων"
 
 #: includes/templates/dashboard.php:233
 msgid "Your message"
