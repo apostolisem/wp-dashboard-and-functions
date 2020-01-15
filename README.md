@@ -34,14 +34,14 @@ $wpc['company_name'] = "WordPress Care";
 $wpc['company_website'] = "https://wpcare.gr";
 $wpc['company_email'] = "info@wpcare.gr";
 // api url to get the website information
-$wpc['api_url'] = "https://wpcare.gr/tools/domains/json.php";
+$wpc['api_url'] = "https://your.api/url/here/json.php";
 ```
 
 The **REST API** is easy to implement. At the moment, the plugin requests two types of data, **domain data** and **domain messages** to display on the dashboard.
 
 ### URL to request domain data:
 ```html
-https://server-domain.com/api.php?domain=client-domain.com&ver=1&action=data
+https://your.api/url/here/json.php?domain=client-domain.com&ver=1&action=data
 ```
 #### The JSON output:
 The plugin will recognize the following JSON output and will show the domain's data on client's dashboard.
@@ -54,7 +54,7 @@ The plugin will recognize the following JSON output and will show the domain's d
 
 ### URL to get domain messages:
 ```html
-https://server-domain.com/api.php?domain=client-domain.com&ver=1&action=messages
+https://your.api/url/here/json.php?domain=client-domain.com&ver=1&action=messages
 ```
 #### The JSON output:
 The plugin will recognize the following JSON output and will show the messages on client's dashboard.
