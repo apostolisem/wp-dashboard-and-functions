@@ -3,12 +3,12 @@
 Plugin Name: WPCARE: Dashboard & Functions
 Plugin URI: https://wpcare.gr
 Description: Replace the Dashboard with a custom one and add useful functions for the clients of WordPress Care (wpcare.gr).
-Version: 2.0.3
+Version: 3.0.0
 Author: WordPress Care
 Author URI: https://wpcare.gr
 License: MIT
 License URI: https://choosealicense.com/licenses/mit/
-Text Domain: wpcare-dashboard-and-functions
+Text Domain: wp-dashboard-and-functions
 */
 
 // work only if called from withing wordpress universe
@@ -53,7 +53,7 @@ class wpcdf_custom_constructor {
 	}
 
 	function wpcdf_register_menu() {
-		add_dashboard_page( __( 'Dashboard', 'wpcare-dashboard-and-functions' ), __( 'Dashboard', 'wpcare-dashboard-and-functions' ), 'read', 'wpcare-dashboard', array( &$this,'wpcdf_create_dashboard') );
+		add_dashboard_page( __( 'Dashboard', 'wp-dashboard-and-functions' ), __( 'Dashboard', 'wp-dashboard-and-functions' ), 'read', 'wpcare-dashboard', array( &$this,'wpcdf_create_dashboard') );
 	}
 
 	function wpcdf_create_dashboard() {
@@ -69,8 +69,8 @@ class wpcdf_custom_constructor {
 	}
 
 	function load_custom_plugin_translation_file() {
-		$mofile = plugin_dir_path( __FILE__ ) . 'wpcare-dashboard-and-functions-' . get_locale() . '.mo';
-		return load_textdomain('wpcare-dashboard-and-functions', $mofile);
+		$mofile = plugin_dir_path( __FILE__ ) . 'wp-dashboard-and-functions-' . get_locale() . '.mo';
+		return load_textdomain('wp-dashboard-and-functions', $mofile);
 	}
 
 

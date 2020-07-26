@@ -28,7 +28,7 @@ $wpc_error = '';
 if (strlen($wpc_email) > 0 && is_email($wpc_email)) {
   $wpc_email = $_POST['wpc_email'];
 } elseif (strlen($wpc_email) > 0 && !is_email($wpc_email)) {
-  $wpc_error = __("The email address you entered is not correct, please try again!",'wpcare-dashboard-and-functions');
+  $wpc_error = __("The email address you entered is not correct, please try again!",'wp-dashboard-and-functions');
 }
 
 // gather the message of support request
@@ -135,7 +135,7 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
 
 <div class="wrap" style="max-width: 1000px;">
 
-	<h1><?php _e( 'Dashboard', 'wpcare-dashboard-and-functions' ); ?></h1>
+	<h1><?php _e( 'Dashboard', 'wp-dashboard-and-functions' ); ?></h1>
   <?php
   // check if we have all the data to send the support request
   if (!$wpc_error && $wpc_name && $wpc_email && $wpc_message) {
@@ -147,23 +147,23 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
                   'Reply-To: ' . $wpc_email . "\r\n";
 
       if(wp_mail($to, $subject, strip_tags($wpc_message), $headers)) { // message sent
-        $success_msg = __('Success! Support Request Sent, we\'ll contact you soon!','wpcare-dashboard-and-functions');
+        $success_msg = __('Success! Support Request Sent, we\'ll contact you soon!','wp-dashboard-and-functions');
         echo '<div class="notice notice-success inline"><p>'.$success_msg.'</p></div>';
         $wpc_message = '';
       }
       else  { // message not sent
-        $uknown_error = __('Unknown Error!','wpcare-dashboard-and-functions');
+        $uknown_error = __('Unknown Error!','wp-dashboard-and-functions');
         echo '<div class="notice notice-error inline"><p>'.$uknown_error.'</p></div>';
       }
 
   } elseif (strlen($wpc_error) > 0) {
-    $error_ = __("Error!",'wpcare-dashboard-and-functions');
+    $error_ = __("Error!",'wp-dashboard-and-functions');
     echo '<div class="notice notice-error inline"><p>'.$error_.' '.$wpc_error.'</p></div>';
   }
   ?>
 
 	<div class="about-text">
-		<?php echo sprintf(__('Welcome %s! We\'ve added a few links on this page to help you manage your website. For further assistance, please use the embedded form below to request support.','wpcare-dashboard-and-functions' ), ucfirst($current_user->display_name)); ?>
+		<?php echo sprintf(__('Welcome %s! We\'ve added a few links on this page to help you manage your website. For further assistance, please use the embedded form below to request support.','wp-dashboard-and-functions' ), ucfirst($current_user->display_name)); ?>
 	</div><!-- .about-text -->
 
 	<div class="col-container">
@@ -172,14 +172,14 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
 						<div class="inside">
 							<h2>
 								<span class="dashicons dashicons-admin-appearance"></span><br />
-								<?php _e('Pages & Posts','wpcare-dashboard-and-functions'); ?>
+								<?php _e('Pages & Posts','wp-dashboard-and-functions'); ?>
 							</h2>
 							<ul>
-								<li><a href="<?php echo get_admin_url(null, '/post-new.php'); ?>"><?php _e('Add New Blog Post','wpcare-dashboard-and-functions'); ?></a></li>
-								<li><a href="<?php echo get_admin_url(null, '/edit.php'); ?>"><?php _e('Edit Existing Post','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="<?php echo get_admin_url(null, '/post-new.php?post_type=page'); ?>"><?php _e('Add New Page','wpcare-dashboard-and-functions'); ?></a></li>
-								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=page'); ?>"><?php _e('Edit Existing Page','wpcare-dashboard-and-functions'); ?></a></li>
-								<li><a href="<?php echo get_admin_url(null, '/edit-tags.php?taxonomy=category'); ?>"><?php _e('Blog Categories','wpcare-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/post-new.php'); ?>"><?php _e('Add New Blog Post','wp-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/edit.php'); ?>"><?php _e('Edit Existing Post','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="<?php echo get_admin_url(null, '/post-new.php?post_type=page'); ?>"><?php _e('Add New Page','wp-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=page'); ?>"><?php _e('Edit Existing Page','wp-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/edit-tags.php?taxonomy=category'); ?>"><?php _e('Blog Categories','wp-dashboard-and-functions'); ?></a></li>
 							</ul>
 					</div><!-- .inside -->
 				</div><!-- .col-4 -->
@@ -190,14 +190,14 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
 						<div class="inside">
 							<h2>
 								<span class="dashicons dashicons-store"></span><br />
-								<?php _e('Ecommerce','wpcare-dashboard-and-functions'); ?>
+								<?php _e('Ecommerce','wp-dashboard-and-functions'); ?>
 							</h2>
 							<ul>
-								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=shop_order'); ?>"><?php _e('Recent Orders','wpcare-dashboard-and-functions'); ?></a></li>
-								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=shop_coupon'); ?>"><?php _e('Coupon Codes','wpcare-dashboard-and-functions'); ?></a></li>
-								<li><a href="<?php echo get_admin_url(null, '/admin.php?page=wc-reports'); ?>"><?php _e('Reports & Analytics','wpcare-dashboard-and-functions'); ?></a></li>
-								<li><a href="<?php echo get_admin_url(null, '/post-new.php?post_type=product'); ?>"><?php _e('Add New Products','wpcare-dashboard-and-functions'); ?></a></li>
-								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=product'); ?>"><?php _e('Edit Products','wpcare-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=shop_order'); ?>"><?php _e('Recent Orders','wp-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=shop_coupon'); ?>"><?php _e('Coupon Codes','wp-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/admin.php?page=wc-reports'); ?>"><?php _e('Reports & Analytics','wp-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/post-new.php?post_type=product'); ?>"><?php _e('Add New Products','wp-dashboard-and-functions'); ?></a></li>
+								<li><a href="<?php echo get_admin_url(null, '/edit.php?post_type=product'); ?>"><?php _e('Edit Products','wp-dashboard-and-functions'); ?></a></li>
 							</ul>
 					</div><!-- .inside -->
 				</div><!-- .col-4 -->
@@ -208,14 +208,14 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
             <div class="inside">
               <h2>
                 <span class="dashicons dashicons-admin-media"></span><br />
-                <?php _e('Site Options','wpcare-dashboard-and-functions'); ?>
+                <?php _e('Site Options','wp-dashboard-and-functions'); ?>
               </h2>
               <ul>
-                <li><a href="<?php echo get_admin_url(null, '/profile.php'); ?>"><?php _e('Edit My Profile','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="<?php echo get_admin_url(null, '/media-new.php'); ?>"><?php _e('Add Media','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="<?php echo get_admin_url(null, '/upload.php'); ?>"><?php _e('View Media Library','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="<?php echo get_admin_url(null, '/users.php'); ?>"><?php _e('View Users','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="<?php echo get_admin_url(null, '/nav-menus.php'); ?>"><?php _e('Navigation Menus','wpcare-dashboard-and-functions'); ?></a></li>
+                <li><a href="<?php echo get_admin_url(null, '/profile.php'); ?>"><?php _e('Edit My Profile','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="<?php echo get_admin_url(null, '/media-new.php'); ?>"><?php _e('Add Media','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="<?php echo get_admin_url(null, '/upload.php'); ?>"><?php _e('View Media Library','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="<?php echo get_admin_url(null, '/users.php'); ?>"><?php _e('View Users','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="<?php echo get_admin_url(null, '/nav-menus.php'); ?>"><?php _e('Navigation Menus','wp-dashboard-and-functions'); ?></a></li>
               </ul>
           </div><!-- .inside -->
         </div><!-- .col-4 -->
@@ -224,14 +224,14 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
             <div class="inside">
               <h2>
                 <span class="dashicons dashicons-list-view"></span><br />
-                <?php _e('Useful Links','wpcare-dashboard-and-functions'); ?>
+                <?php _e('Useful Links','wp-dashboard-and-functions'); ?>
               </h2>
               <ul>
-                <li><a href="https://wpcare.gr/my-account/" target="_blank"><?php _e('My Account','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/my-account/subscriptions/" target="_blank"><?php _e('My Subscriptions','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/tools/crm/knowledge-base" target="_blank"><?php _e('Knowledge Base','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/blog/" target="_blank"><?php _e('WPCARE blog','wpcare-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/pricing/" target="_blank"><?php _e('Maintenance Plans','wpcare-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://wpcare.gr/my-account/" target="_blank"><?php _e('My Account','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://wpcare.gr/my-account/subscriptions/" target="_blank"><?php _e('My Subscriptions','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://wpcare.gr/tools/crm/knowledge-base" target="_blank"><?php _e('Knowledge Base','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://wpcare.gr/blog/" target="_blank"><?php _e('WPCARE blog','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://wpcare.gr/pricing/" target="_blank"><?php _e('Maintenance Plans','wp-dashboard-and-functions'); ?></a></li>
               </ul>
           </div><!-- .inside -->
         </div><!-- .col-4 -->
@@ -241,15 +241,15 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
     <div class="col-container">
 
       <div class="col-1-2 website-info">
-        <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 20px;"><?php _e( 'Request Support' ,'wpcare-dashboard-and-functions'); ?></h3>
-        <p style="font-size:12px;"><?php echo sprintf(__('Fill the form below and "Send a Request" to our Support team. Wee\'ll inform you in advance if any charges apply. Alternatively, you can drop us an <a href="mailto:%s">e-mail</a>.','wpcare-dashboard-and-functions'), $wpc['company_email']); ?></p>
+        <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 20px;"><?php _e( 'Request Support' ,'wp-dashboard-and-functions'); ?></h3>
+        <p style="font-size:12px;"><?php echo sprintf(__('Fill the form below and "Send a Request" to our Support team. Wee\'ll inform you in advance if any charges apply. Alternatively, you can drop us an <a href="mailto:%s">e-mail</a>.','wp-dashboard-and-functions'), $wpc['company_email']); ?></p>
 
         <form method="post">
-          <label><?php _e('Name','wpcare-dashboard-and-functions'); ?>:<br />
+          <label><?php _e('Name','wp-dashboard-and-functions'); ?>:<br />
             <input type="text" name="wpc_name" value="<?php echo $current_user->display_name; ?>" class="regular-text" /></label><br />
-            <label><?php _e('E-mail','wpcare-dashboard-and-functions'); ?>:<br />
+            <label><?php _e('E-mail','wp-dashboard-and-functions'); ?>:<br />
               <input type="text" name="wpc_email" value="<?php echo $current_user->user_email; ?>" class="regular-text" /></label><br />
-            <label><?php _e('Your message','wpcare-dashboard-and-functions'); ?>:<br />
+            <label><?php _e('Your message','wp-dashboard-and-functions'); ?>:<br />
             <textarea name="wpc_message" style="width: 100%; padding:10px;" rows="6"><?php echo strip_tags($wpc_message); ?></textarea></label>
             <?php submit_button( $text = __('Send Request'), $type = 'primary', $name = 'submit', $wrap = true, $other_attributes = null ); ?>
         </form>
@@ -264,7 +264,7 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
 
         <div class="col-1-2 website-info">
 
-          <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 20px;"><?php _e('Messages from','wpcare-dashboard-and-functions'); ?> <?php echo $wpc['company_name'];?></h3>
+          <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 20px;"><?php _e('Messages from','wp-dashboard-and-functions'); ?> <?php echo $wpc['company_name'];?></h3>
 
           <?php
             // output the messages connected with the current domain
@@ -290,13 +290,13 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
           ?>
 
           <br />
-          <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 20px;"><?php _e('Website Information','wpcare-dashboard-and-functions'); ?></h3>
-          <p><strong><?php _e('Domain:','wpcare-dashboard-and-functions'); ?></strong> <?php echo $json_data['domain']; ?></p>
-          <p><strong><?php _e('Domain Expiration:','wpcare-dashboard-and-functions'); ?></strong> <?php echo $json_data['dom_exp']; ?> (<a href="<?php echo $json_data['dom_renew']; ?>" target="_blank">renew</a>)</p>
-          <p><strong><?php _e('Plan:','wpcare-dashboard-and-functions'); ?></strong> <?php echo $json_data['hosting']; ?></p>
-          <p><strong><?php _e('Plan Expiration:','wpcare-dashboard-and-functions'); ?></strong> <?php echo $json_data['hosting_exp']; ?> (<a href="<?php echo $json_data['hosting_renew']; ?>" target="_blank">renew</a>)</p>
+          <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 20px;"><?php _e('Website Information','wp-dashboard-and-functions'); ?></h3>
+          <p><strong><?php _e('Domain:','wp-dashboard-and-functions'); ?></strong> <?php echo $json_data['domain']; ?></p>
+          <p><strong><?php _e('Domain Expiration:','wp-dashboard-and-functions'); ?></strong> <?php echo $json_data['dom_exp']; ?> (<a href="<?php echo $json_data['dom_renew']; ?>" target="_blank">renew</a>)</p>
+          <p><strong><?php _e('Plan:','wp-dashboard-and-functions'); ?></strong> <?php echo $json_data['hosting']; ?></p>
+          <p><strong><?php _e('Plan Expiration:','wp-dashboard-and-functions'); ?></strong> <?php echo $json_data['hosting_exp']; ?> (<a href="<?php echo $json_data['hosting_renew']; ?>" target="_blank">renew</a>)</p>
           <p><a href="https://wpcare.gr/pricing/" target="_blank"><?php _e('Do you need help with your site\'s management? Subscribe for a Maintenance Plan with 35% discount (use WPC2020 coupon code on checkout).'); ?></a></p>
-          <p><?php _e('<strong>Tip:</strong> To ensure the smooth running of your website, please renew the above services before they expire.','wpcare-dashboard-and-functions'); ?></p>
+          <p><?php _e('<strong>Tip:</strong> To ensure the smooth running of your website, please renew the above services before they expire.','wp-dashboard-and-functions'); ?></p>
         </div> <!-- .col-1-2 -->
 
     </div><!-- #col-container -->
