@@ -3,11 +3,10 @@
 Plugin Name: WPCARE: Dashboard & Functions
 Plugin URI: https://wpcare.gr
 Description: Replace the Dashboard with a custom one and add useful functions for the clients of WordPress Care (wpcare.gr).
-Version: 3.0.0
-Author: WordPress Care
+Version: 3.0.1
+Author: WPCARE
 Author URI: https://wpcare.gr
-License: MIT
-License URI: https://choosealicense.com/licenses/mit/
+License: GPL2 or later
 Text Domain: wp-dashboard-and-functions
 */
 

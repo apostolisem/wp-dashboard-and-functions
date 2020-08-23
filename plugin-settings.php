@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) or die( 'error!' );
 global $wpc;
 
 // edit your company info
-$wpc['company_name'] = "WordPress Care";
+$wpc['company_name'] = "WPCARE";
 $wpc['company_website'] = "https://wpcare.gr";
 $wpc['company_email'] = "info@wpcare.gr";
 
