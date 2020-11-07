@@ -231,7 +231,6 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
                 <li><a href="https://wpcare.gr/my-account/subscriptions/" target="_blank"><?php _e('My Subscriptions','wp-dashboard-and-functions'); ?></a></li>
                 <li><a href="https://wpcare.gr/tools/crm/knowledge-base" target="_blank"><?php _e('Knowledge Base','wp-dashboard-and-functions'); ?></a></li>
                 <li><a href="https://wpcare.gr/blog/" target="_blank"><?php _e('WPCARE blog','wp-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/pricing/" target="_blank"><?php _e('Maintenance Plans','wp-dashboard-and-functions'); ?></a></li>
               </ul>
           </div><!-- .inside -->
         </div><!-- .col-4 -->
@@ -295,7 +294,6 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
           <p><strong><?php _e('Domain Expiration:','wp-dashboard-and-functions'); ?></strong> <?php echo $json_data['dom_exp']; ?> (<a href="<?php echo $json_data['dom_renew']; ?>" target="_blank">renew</a>)</p>
           <p><strong><?php _e('Plan:','wp-dashboard-and-functions'); ?></strong> <?php echo $json_data['hosting']; ?></p>
           <p><strong><?php _e('Plan Expiration:','wp-dashboard-and-functions'); ?></strong> <?php echo $json_data['hosting_exp']; ?> (<a href="<?php echo $json_data['hosting_renew']; ?>" target="_blank">renew</a>)</p>
-          <p><a href="https://wpcare.gr/pricing/" target="_blank"><?php _e('Do you need help with your site\'s management? Subscribe for a Maintenance Plan with 35% discount (use WPC2020 coupon code on checkout).'); ?></a></p>
           <p><?php _e('<strong>Tip:</strong> To ensure the smooth running of your website, please renew the above services before they expire.','wp-dashboard-and-functions'); ?></p>
         </div> <!-- .col-1-2 -->
 
