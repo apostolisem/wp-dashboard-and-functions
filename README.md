@@ -24,7 +24,7 @@ WordPress will now upload the plugin file from your computer and install it for 
 
 ## Usage
 
-The plugin is designed to work with our website "[wpcare.gr](https://wpcare.gr)" and our clients. This means that as soon as you upload it on your website, it will communicate with our REST API to find information about the domain is running from (one-way communication, we don't collect any data).
+The plugin is designed to work with our website "[wpcare.gr](https://wpcare.gr)" and our clients. This means that as soon as you upload it on your website, it will communicate with our API to find information about the domain is running from (one-way communication, we don't collect any data).
 
 In order to use it for your own needs, alter the following variables in "plugin-settings.php" with your own data, now you can use it for your own clients.
 
@@ -37,7 +37,7 @@ $wpc['company_email'] = "info@wpcare.gr";
 $wpc['api_url'] = "https://your.api/url/here/json.php";
 ```
 
-The **REST API** is easy to implement. At the moment, the plugin requests two types of data, **domain data** and **domain messages** to display on the dashboard.
+The **API** is easy to implement. At the moment, the plugin requests two types of data, **domain data** and **domain messages** to display on the dashboard.
 
 ### URL to request domain data:
 ```html
