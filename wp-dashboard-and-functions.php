@@ -3,7 +3,7 @@
 Plugin Name: WP Dashboard & Functions
 Plugin URI: https://wpcare.gr
 Description: Replaces the original WordPress dashboard and adds some useful features.
-Version: 3.0.4
+Version: 3.0.5
 Author: WPCARE
 Author URI: https://wpcare.gr
 License: GPL2 or later
