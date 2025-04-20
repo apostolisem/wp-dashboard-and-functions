@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPCARE: Dashboard & Functions\n"
+"Project-Id-Version: Demo Company: Dashboard & Functions\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 23:50+0000\n"
 "PO-Revision-Date: 2020-01-13 16:29+0200\n"
@@ -137,8 +137,8 @@ msgid "Help & Tutorials"
 msgstr "Βίντεο & Tutorials"
 
 #: includes/templates/dashboard.php:214
-msgid "WPCARE blog"
-msgstr ""
+msgid "Demo Company blog"
+msgstr "Demo Company blog"
 
 #: includes/templates/dashboard.php:215
 msgid "Maintenance Plans"
@@ -212,22 +212,22 @@ msgstr ""
 "ιστότοπού σας, ανανεώστε τις παραπάνω υπηρεσίες πριν λήξουν."
 
 #. Name of the plugin
-msgid "WPCARE: Dashboard & Functions"
+msgid "Demo Company: Dashboard & Functions"
 msgstr ""
 
 #. Description of the plugin
 msgid ""
 "Replace the Dashboard with a custom one and add useful functions for the "
-"clients of WordPress Care (wpcare.gr)."
+"clients of Demo Company (yourwebsite.com)."
 msgstr ""
 "Αντικαταστήστε τον Πίνακα ελέγχου με έναν προσαρμοσμένο και προσθέστε "
-"χρήσιμες λειτουργίες για τους πελάτες του WordPress Care (wpcare.gr)."
+"χρήσιμες λειτουργίες για τους πελάτες του Demo Company (yourwebsite.com)."
 
 #. URI of the plugin
 #. Author URI of the plugin
-msgid "https://wpcare.gr"
+msgid "https://yourwebsite.com"
 msgstr ""
 
 #. Author of the plugin
-msgid "WordPress Care"
+msgid "Demo Company"
 msgstr ""

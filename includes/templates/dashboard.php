@@ -227,10 +227,10 @@ $wpc_message = (isset($_POST['wpc_message'])) ? $_POST['wpc_message'] : '' ;
                 <?php _e('Useful Links','wp-dashboard-and-functions'); ?>
               </h2>
               <ul>
-                <li><a href="https://wpcare.gr/my/" target="_blank"><?php _e('My Account','wp-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/my/orders/" target="_blank"><?php _e('My Subscriptions','wp-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/" target="_blank"><?php _e('Get WordPress Support','wp-dashboard-and-functions'); ?></a></li>
-                <li><a href="https://wpcare.gr/blog/" target="_blank"><?php _e('WPCARE blog','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://yourwebsite.com/my/" target="_blank"><?php _e('My Account','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://yourwebsite.com/my/orders/" target="_blank"><?php _e('My Subscriptions','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://yourwebsite.com/" target="_blank"><?php _e('Get WordPress Support','wp-dashboard-and-functions'); ?></a></li>
+                <li><a href="https://yourwebsite.com/blog/" target="_blank"><?php _e('Demo Company blog','wp-dashboard-and-functions'); ?></a></li>
               </ul>
           </div><!-- .inside -->
         </div><!-- .col-4 -->

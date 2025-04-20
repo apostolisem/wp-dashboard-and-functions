@@ -11,12 +11,12 @@ defined( 'ABSPATH' ) or die( 'error!' );
 global $wpc;
 
 // edit your company info
-$wpc['company_name'] = "WPCARE";
-$wpc['company_website'] = "https://wpcare.gr";
-$wpc['company_email'] = "info@wpcare.gr";
+$wpc['company_name'] = "Demo Company";
+$wpc['company_website'] = "https://yourwebsite.com";
+$wpc['company_email'] = "info@yourwebsite.com";
 
 // api url to get the website information
-$wpc['api_url'] = "https://wpcare.gr/tools/domains/json.php";
+$wpc['api_url'] = "https://yourwebsite.com/tools/domains/json.php";
 
 // login alerts to "company_email" of users with "edit_pages" capability
 $wpc['enable_login_alerts'] = 1; // default 1 = yes

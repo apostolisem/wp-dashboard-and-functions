@@ -1,7 +1,8 @@
-#, fuzzy
+# Copyright (C) 2020
+# This file is distributed under the same license as the Demo Company: Dashboard & Functions package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPCARE: Dashboard & Functions\n"
+"Project-Id-Version: Demo Company: Dashboard & Functions\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 23:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -132,7 +133,7 @@ msgid "Help & Tutorials"
 msgstr ""
 
 #: includes/templates/dashboard.php:214
-msgid "WPCARE blog"
+msgid "Demo Company blog"
 msgstr ""
 
 #: includes/templates/dashboard.php:215
@@ -202,20 +203,20 @@ msgid ""
 msgstr ""
 
 #. Name of the plugin
-msgid "WPCARE: Dashboard & Functions"
+msgid "Demo Company: Dashboard & Functions"
 msgstr ""
 
 #. Description of the plugin
 msgid ""
 "Replace the Dashboard with a custom one and add useful functions for the "
-"clients of WordPress Care (wpcare.gr)."
+"clients of Demo Company (yourwebsite.com)."
 msgstr ""
 
 #. URI of the plugin
 #. Author URI of the plugin
-msgid "https://wpcare.gr"
+msgid "https://yourwebsite.com"
 msgstr ""
 
 #. Author of the plugin
-msgid "WordPress Care"
+msgid "Demo Company"
 msgstr ""

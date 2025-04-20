@@ -1,7 +1,7 @@
-# WPCARE: Dashboard & Functions
-![Plugin Preview](https://wpcare.gr/tools/domains/plugin-preview3.jpg)
+# Demo Company: Dashboard & Functions
+![Plugin Preview](https://yourwebsite.com/tools/domains/plugin-preview3.jpg)
 
-A Wordpress Plugin to Replace the Default Admin Dashboard with a custom one and add Useful Functions for Wpcare.gr Clients.
+A WordPress Plugin to Replace the Default Admin Dashboard with a custom one and add Useful Functions for Demo Company Clients.
 
 - Replace the original WordPress Dashboard with a Custom one
 - Easy way to customize the plugin for your clients
@@ -20,19 +20,17 @@ A Wordpress Plugin to Replace the Default Admin Dashboard with a custom one and 
 
 WordPress will now upload the plugin file from your computer and install it for you. You will see a success message after the installation is finished. Press "Activate Plugin".
 
-
-
 ## Usage
 
-The plugin is designed to work with our website "[wpcare.gr](https://wpcare.gr)" and our clients. This means that as soon as you upload it on your website, it will communicate with our API to find information about the domain is running from (one-way communication, we don't collect any data).
+The plugin is designed to work with our website "[yourwebsite.com](https://yourwebsite.com)" and our clients. This means that as soon as you upload it on your website, it will communicate with our API to find information about the domain is running from (one-way communication, we don't collect any data).
 
 In order to use it for your own needs, alter the following variables in "plugin-settings.php" with your own data, now you can use it for your own clients.
 
 ```php
 // edit your company info
-$wpc['company_name'] = "WordPress Care";
-$wpc['company_website'] = "https://wpcare.gr";
-$wpc['company_email'] = "info@wpcare.gr";
+$wpc['company_name'] = "Demo Company";
+$wpc['company_website'] = "https://yourwebsite.com";
+$wpc['company_email'] = "info@yourwebsite.com";
 // api url to get the website information
 $wpc['api_url'] = "https://your.api/url/here/json.php";
 ```
@@ -48,8 +46,8 @@ The plugin will recognize the following JSON output and will show the domain's d
 
 ```json
 {"domain":"client-domain.com","dom_exp":"31-12-2020", 
-"dom_renew":"https:\/\/wpcare.gr\/","hosting":"Starter Hosting Plan, HDD 5GB, Bandwidth 50GB\/month", 
-"hosting_exp":"31-12-2020","hosting_renew":"https:\/\/wpcare.gr\/"}
+"dom_renew":"https:\/\/yourwebsite.com\/","hosting":"Starter Hosting Plan, HDD 5GB, Bandwidth 50GB\/month", 
+"hosting_exp":"31-12-2020","hosting_renew":"https:\/\/yourwebsite.com\/"}
 ```
 
 ### URL to get domain messages:
@@ -68,7 +66,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 [MIT License](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) 2020 - WordPress Care ([wpcare.gr](https://wpcare.gr))
+Copyright (c) 2020
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: WP Dashboard & Functions
-Plugin URI: https://wpcare.gr
+Plugin Name: Demo Company Dashboard & Functions
+Plugin URI: https://yourwebsite.com
 Description: Replaces the original WordPress dashboard and adds some useful features.
 Version: 3.0.5
-Author: WPCARE
-Author URI: https://wpcare.gr
+Author: Demo Company
+Author URI: https://yourwebsite.com
 License: GPL2 or later
 Text Domain: wp-dashboard-and-functions
 */
@@ -44,7 +44,7 @@ class wpcdf_custom_constructor {
 			$screen = get_current_screen();
 
 			if( $screen->base == 'dashboard' ) {
-				wp_safe_redirect( admin_url( 'index.php?page=wpcare-dashboard' ) );
+				wp_safe_redirect( admin_url( 'index.php?page=democo-dashboard' ) );
 				exit;
 			}
 		}
@@ -52,7 +52,7 @@ class wpcdf_custom_constructor {
 	}
 
 	function wpcdf_register_menu() {
-		add_dashboard_page( __( 'Dashboard', 'wp-dashboard-and-functions' ), __( 'Dashboard', 'wp-dashboard-and-functions' ), 'read', 'wpcare-dashboard', array( &$this,'wpcdf_create_dashboard') );
+		add_dashboard_page( __( 'Dashboard', 'wp-dashboard-and-functions' ), __( 'Dashboard', 'wp-dashboard-and-functions' ), 'read', 'democo-dashboard', array( &$this,'wpcdf_create_dashboard') );
 	}
 
 	function wpcdf_create_dashboard() {
@@ -76,4 +76,4 @@ class wpcdf_custom_constructor {
 }
 
 // instantiate plugin's class
-$GLOBALS['wpcare_custom_dashboard'] = new wpcdf_custom_constructor();
+$GLOBALS['democo_custom_dashboard'] = new wpcdf_custom_constructor();
