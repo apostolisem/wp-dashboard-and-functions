@@ -1,5 +1,4 @@
 # Demo Company: Dashboard & Functions
-![Plugin Preview](https://yourwebsite.com/tools/domains/plugin-preview3.jpg)
 
 A WordPress Plugin to Replace the Default Admin Dashboard with a custom one and add Useful Functions for Demo Company Clients.
 
@@ -22,7 +21,7 @@ WordPress will now upload the plugin file from your computer and install it for 
 
 ## Usage
 
-The plugin is designed to work with our website "[yourwebsite.com](https://yourwebsite.com)" and our clients. This means that as soon as you upload it on your website, it will communicate with our API to find information about the domain is running from (one-way communication, we don't collect any data).
+"The plugin is designed to work with the website 'yourwebsite.com' and its clients. Once uploaded to your website, it communicates with an API to identify the domain it is running on. This is a one-way communication—no data is sent to any external server."
 
 In order to use it for your own needs, alter the following variables in "plugin-settings.php" with your own data, now you can use it for your own clients.
 
