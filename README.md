@@ -21,7 +21,7 @@ WordPress will now upload the plugin file from your computer and install it for 
 
 ## Usage
 
-"The plugin is designed to work with the website 'yourwebsite.com' and its clients. Once uploaded to your website, it communicates with an API to identify the domain it is running on. This is a one-way communication—no data is sent to any external server."
+The plugin is designed to work with the website 'yourwebsite.com' and its clients. Once uploaded to your website, it communicates with an API to identify the domain it is running on. This is a one-way communication—no data is sent to any external server.
 
 In order to use it for your own needs, alter the following variables in "plugin-settings.php" with your own data, now you can use it for your own clients.
 
